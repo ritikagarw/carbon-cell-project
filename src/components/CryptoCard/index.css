@@ -1,0 +1,76 @@
+* {
+  font-size: 16px;
+}
+
+.cryptoCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: rgb(30, 30, 30);
+  border-radius: 10px;
+  height: 12rem;
+  width: 17rem;
+  margin: 20px;
+}
+
+.heading {
+  display: flex;
+  gap: 15px;
+}
+
+.crypto-logo {
+  background-color: rgb(192, 163, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.name {
+  opacity: 0.8;
+}
+
+.pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.trend {
+  font-size: 12px;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info {
+  font-size: 25px;
+  color: #2ab32a;
+}
+
+.info:hover {
+  color: #208620;
+  cursor: pointer;
+}
+
+.tradeBtn {
+  padding: 5px 15px;
+  border-radius: 10px;
+  background-color: #2ab32a;
+}
+
+.tradeBtn:hover {
+  background-color: #208620;
+  cursor: pointer;
+}

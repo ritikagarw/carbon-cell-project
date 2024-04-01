@@ -1,0 +1,10 @@
+#chart {
+    height: 300px !important;
+    width: 30vw !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #chart {
+        width: 80vw !important;
+    }
+}
