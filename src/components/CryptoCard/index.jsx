@@ -4,6 +4,7 @@ import { FaArrowTrendUp } from "react-icons/fa6";
 import { IoMdInformationCircleOutline } from "react-icons/io";
 import he from "he";
 import "./index.css";
+import { Link } from "react-router-dom";
 
 const CryptoCard = ({ symbol = "$", rate = "0", desc = "" }) => {
   return (
@@ -26,7 +27,7 @@ const CryptoCard = ({ symbol = "$", rate = "0", desc = "" }) => {
       </div>
       <div className="cardFooter">
         <IoMdInformationCircleOutline className="info" />
-        <div className="tradeBtn">Trade</div>
+        <div className="tradeBtn"><Link to="/trade">Trade</Link></div>
       </div>
     </div>
   );

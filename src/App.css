@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+.welcome {
+  margin: 20px;
+}
+
+.welcome div:first-child span{
+  font-size: 2rem;
+}
+.welcome div:first-child span:nth-child(2){
+  color: #2AB32A;
+}
+
+.welcome div:last-child span{
+  font-size: 1.5rem;
+}
+.welcome div:last-child span:last-child{
+  color: #2AB32A;
+}
+
 .main {
   width: 100%;
 }
@@ -11,21 +29,38 @@
 .main-container {
   display: flex;
   font-size: 22px;
-  /* width: fit-content; */
 }
+
 main {
   padding: 10px;
   width: 100%;
-}
-
-.title {
-  font-size: 3rem;
-  display: grid;
-  place-items: center;
+  margin: 2rem;
+  margin-left: 4rem;
 }
 
 .home {
   width: 100%;
+}
+.graphContainer {
+  margin: 20px;
+  margin-top: 10vh;
+}
+.graphHeader {
+  font-size: 30px;
+  margin-bottom: 50px;
+  font-weight: bold;
+}
+
+.cryptoContainer {
+  margin: 10px;
+  margin-top: 10vh;
+}
+
+.cryptoHeader {
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 .cryptoCards {
@@ -35,7 +70,8 @@ main {
 
 @media only screen and (max-width: 768px) {
   main {
-    width: 88%;
+    margin: 1rem;
+    margin-left: 3rem;
   }
 
   .home {

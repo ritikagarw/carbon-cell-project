@@ -1,0 +1,17 @@
+.title {
+  height: 88vh;
+  width: 93vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.noData {
+  height: 30rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .noData {
+    height: 20rem;
+  }
+}

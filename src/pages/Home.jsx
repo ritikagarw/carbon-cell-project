@@ -18,25 +18,34 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Graph />
+      <div className="welcome">
+        <div>
+          <span>Hello, </span>
+          <span>Brooklyn Simmons </span>
+          <span>👋</span>
+        </div>
+        <div>
+          <span>Welcome to </span>
+          <span>Spot trading!</span>
+        </div>
+      </div>
+      <div className="graphContainer">
+        <p className="graphHeader">Population Chart</p>
+        <Graph />
+      </div>
 
-      <div className="cryptoCards">
-        {data?.map((data) => (
-          <CryptoCard
-            key={data.code}
-            symbol={data.symbol}
-            rate={data.rate}
-            desc={data.description}
-          />
-        ))}
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
-        <CryptoCard />
+      <div className="cryptoContainer">
+        <p className="cryptoHeader">Crypto Prices</p>
+        <div className="cryptoCards">
+          {data?.map((data) => (
+            <CryptoCard
+              key={data.code}
+              symbol={data.symbol}
+              rate={data.rate}
+              desc={data.description}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

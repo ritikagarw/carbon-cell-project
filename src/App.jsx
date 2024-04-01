@@ -11,7 +11,7 @@ import Wallet from "./pages/Wallet";
 
 function App() {
   return (
-      <Router>
+      <Router >
         <SideBar>
           <Routes>
             <Route path="/" element={<Home />} />
