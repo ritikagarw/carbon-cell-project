@@ -11,6 +11,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import CompanyLogo from "../../assets/company-logo.png";
 import SidebarMenu from "./SidebarMenu";
+import "./index.css";
 
 const routes = [
   {

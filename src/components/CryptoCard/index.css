@@ -6,11 +6,11 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 15px;
+  padding: 20px;
   background-color: rgb(30, 30, 30);
-  border-radius: 10px;
+  border-radius: 20px;
   height: 12rem;
-  width: 17rem;
+  width: 19rem;
   margin: 20px;
 }
 
@@ -73,4 +73,10 @@
 .tradeBtn:hover {
   background-color: #208620;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .cryptoCard {
+    margin: 10px !important;
+  }
 }

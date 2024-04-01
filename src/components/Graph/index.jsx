@@ -32,18 +32,19 @@ const Graph = () => {
   }, [data]);
 
   return (
-    <div>
+    <div className="graphCard">
       <LineChart
         id="chart"
         label={data[0]?.Nation}
         data={populationData}
-        colors={["#2AB32A", "#fffff"]}
+        colors={["#2AB32A"]}
         xtitle="Year"
         ytitle="Population (in crores)"
         loading="Loading..."
         empty="No data"
         legend={true}
-        library={{ backgroundColor: "#fffff" }}
+        library={{ color: "white" }}
+        points={false}
       />
     </div>
   );

@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   return (
-    <div className="title">
+    <div className="home">
       <Graph />
 
       <div className="cryptoCards">
@@ -29,6 +29,14 @@ const Home = () => {
             desc={data.description}
           />
         ))}
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
+        <CryptoCard />
       </div>
     </div>
   );
